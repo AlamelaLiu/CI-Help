@@ -21,14 +21,20 @@ echo $PATH
 cd -
 ```
 
-- **调试用例**
+- **调试单个用例**
 ```bash
 #1.拷贝测试用例仓库
 git clone https://github.com/open-estuary/test-definitions.git
-#2.调试单个用例
+#2.调试
 1)将case对应的yaml中run/step下路径临时修改成:
 cd test-definitions/auto-test/*** 
 2)test-runner -d test-definitions/auto-test/***.yaml
+```
+
+- **调试单个用例**
+```bash
+#1.拷贝测试用例仓库
+git clone https://github.com/open-estuary/test-definitions.git
 #2.调试plan
 1)将plan对应的yaml中test/automated/path的路径临时修改成:
 test-definitions/auto-test/***.yaml
