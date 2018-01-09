@@ -14,7 +14,7 @@ install:
 params:
    #所需参数
 run:
-   steps:安装之后的动作(终端命令)
+   steps: #安装之后的动作(终端命令)
    #例如: - "cd app/ftp; ./ftp.sh; cd -"
 parse:
    #解析case测试结果,按如下方式书写即可:
