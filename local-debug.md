@@ -31,7 +31,7 @@ cd test-definitions/auto-test/***
 2)test-runner -d test-definitions/auto-test/***.yaml
 ```
 
-- **调试单个用例**
+- **调试plan**
 ```bash
 #1.拷贝测试用例仓库
 git clone https://github.com/open-estuary/test-definitions.git
