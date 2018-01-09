@@ -1,16 +1,16 @@
-##单个case的yaml定义
+单个case的yaml定义
 ```yaml
 metadata: 
-   name:#case名称,可自行修改
-   format:#目前是lava definition 1.0 
-   description:#对case的简单描述
-   maintainer:#维护此case的作者邮箱
-   scope:#case所属类别
-   os:#支持的操作系统(发行版)
-   devices:#支持的设备(开发板)
-   level:#优先级设置（值为1到5,1为最高，5为最低）
+   name: #case名称,可自行修改
+   format: #目前是lava definition 1.0 
+   description: #对case的简单描述
+   maintainer: #维护此case的作者邮箱
+   scope: #case所属类别
+   os: #支持的操作系统(发行版)
+   devices: #支持的设备(开发板)
+   level: #优先级设置（值为1到5,1为最高，5为最低）
 install:
-   deps:#所需的安装包(所有系统共用)
+   deps: #所需的安装包(所有系统共用)
 params:
    #所需参数
 run:
@@ -24,7 +24,7 @@ parse:
       PASS: pass
 ```
 
-##test plan中的yaml定义
+test plan中的yaml定义
 ```yaml
 metadata:
   # name key is needed by test-runner
