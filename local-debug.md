@@ -26,9 +26,10 @@ cd -
 #1.拷贝测试用例仓库
 git clone https://github.com/open-estuary/test-definitions.git
 #2.调试
-1)将case对应的yaml中run/step下路径临时修改成:
+#1)将case对应的yaml中run/step下路径临时修改成:
 cd test-definitions/auto-test/*** 
-2)test-runner -d test-definitions/auto-test/***.yaml
+#2)测试单个用例
+test-runner -d test-definitions/auto-test/***.yaml
 ```
 
 - **调试plan**
@@ -36,9 +37,10 @@ cd test-definitions/auto-test/***
 #1.拷贝测试用例仓库
 git clone https://github.com/open-estuary/test-definitions.git
 #2.调试plan
-1)将plan对应的yaml中test/automated/path的路径临时修改成:
+#1)将plan对应的yaml中test/automated/path的路径临时修改成:
 test-definitions/auto-test/***.yaml
-2)将case对应的yaml中run/step下路径临时修改成:
+#2)将case对应的yaml中run/step下路径临时修改成:
 cd test-definitions/auto-test/*** 
-3)test-runner -p test-definitions/plans/***.yaml
+#3)测试plan
+test-runner -p test-definitions/plans/***.yaml
 ```
